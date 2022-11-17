@@ -1,0 +1,55 @@
+package test;
+
+import java.util.*;  
+
+public class Demo{  
+	public static void main(String args[]){  
+		int a,b,c,d;
+		d = 0;
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter the value for A: ");
+		a = scanner.nextInt();
+		
+		System.out.println("Enter the Value for B :");
+		b = scanner.nextInt();
+		
+		System.out.println("Enter 1 for add");
+		System.out.println("Enter 2 for substract");
+		System.out.println("Enter 3 for multiply");
+		System.out.println("Enter 4 for division");
+		System.out.println("Enter 5 for module");
+		System.out.println("Enter 6 for exit");
+		
+		System.out.println("Select the Option");
+		
+		c = scanner.nextInt();
+		
+		switch(c) {
+			case 1 :
+				d = a+b;
+				break;
+			case 2:
+				d = a-b;
+				break;
+			case 3:
+				d = a*b;
+				break;
+			case 4:
+				d = a/b;
+				break;
+			case 5:
+				d = a%b;
+				break;
+			case 6:
+				System.exit(0);
+				break;
+			default:
+				System.out.println("Enter the correct option");
+				System.exit(0);
+		}
+		System.out.println("Result is :" + d);
+ 
+}  
+}  
+	
