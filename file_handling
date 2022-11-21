@@ -1,0 +1,24 @@
+package test;
+
+import java.io.*;
+import java.util.*;  
+
+public class Demo{  
+	public static void main(String args[]) throws FileNotFoundException{  
+		
+		try {
+			File file =  new File("C:\\Users\\Fenolin Sims\\Downloads\\git\\test\\newFile.txt");
+			Scanner scanner = new Scanner(file);
+			while(scanner.hasNext()) {
+				String scanner2 = scanner.nextLine();
+				System.out.println(scanner2);
+			}
+			scanner.close();
+		}catch(Exception e) {
+			System.out.println("Stack overflow  " +e.toString());
+		}
+		
+		
+}  
+}  
+	
